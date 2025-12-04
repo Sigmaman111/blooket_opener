@@ -1,23 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en" translate="no">
 
 <head>
-  <meta charSet="utf-8" />
+  <meta charset="utf-8" />
   <title>Blooket Dashboard</title>
   <meta name="description" content="Search and discover new sets from a large collection created by users." />
 
-  <link href="https://res.cloudinary.com" rel="preconnect">
-  <link href="https://res.cloudinary.com" rel="dns-prefetch">
-
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Sigmaman111/blooket_opener/refs/heads/main/favicon.ico" />
-  <script type="module" crossorigin src="https://raw.githubusercontent.com/Sigmaman111/blooket_opener/refs/heads/main/important1.js"></script>
-  <link rel="stylesheet" crossorigin href="https://raw.githubusercontent.com/Sigmaman111/blooket_opener/refs/heads/main/ww_important.css">
+  
+  <!-- Use CDN for JS and CSS -->
+  <script type="module" src="https://cdn.jsdelivr.net/gh/Sigmaman111/blooket_opener/important1.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sigmaman111/blooket_opener/ww_important.css">
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    Loading dashboard...
+  </div>
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a8bd87d1871b546',t:'MTc2NDg1Njk5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  <script>
+    // Optional: Ensure JS loaded properly and show a fallback
+    const app = document.getElementById('app');
+    if (!app.innerHTML.trim()) {
+      app.innerHTML = "Failed to load dashboard. Please check console for errors.";
+    }
+  </script>
+</body>
 
 </html>
